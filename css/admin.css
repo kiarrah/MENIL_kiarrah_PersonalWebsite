@@ -1,0 +1,294 @@
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../font/MaterialIcons-Regular.eot); /* For IE6-8 */
+	src: local('Material Icons'),
+	local('MaterialIcons-Regular'),
+	url(../font/MaterialIcons-Regular.woff2) format('woff2'),
+	url(../font/MaterialIcons-Regular.woff) format('woff'),
+	url(../font/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+#bg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#bg.blue {
+	background-image: linear-gradient(rgb(30, 50, 100), rgb(4, 6, 12) 85%);
+}
+
+.section {
+	margin-top: 1rem;
+}
+
+.fab {
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+}
+
+.fab .btn {
+	display: inline-block;
+	position: relative;
+	outline: none;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 32px;
+	z-index: 999;
+	background: #F44336;
+	color: #00A3DD;
+	border-radius: .5rem;
+	box-shadow: 0 0 5px rgba(0,0,0,0.15);
+	transition:0.2s opacity ease-in-out;
+	-webkit-transition:0.2s opacity ease-in-out;
+}
+
+.fab .btn.active {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.plus{
+  color: white;
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 53px;
+  font-size: 38px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  animation: plus-out 0.3s;
+  transition: all 0.3s;
+  color: #FFF !important;
+  text-decoration: none !important;
+}
+
+.rooms {
+	box-shadow: 0 0 5px rgba(0,0,0,0.15);
+	width: 100%;
+	height: auto;
+	text-align: left;
+	overflow: visible;
+	margin-bottom: 1rem;
+}
+
+.rooms-header {
+	overflow: auto;
+	padding: 20px;
+	font-size: 15px;
+	background-color: #1D70A2;
+	color: #fff;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.rooms-body {
+	position: relative;
+	padding: 10px 20px;
+	background-color: #fff;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	font-size: 13px;
+	color: #aaa;
+}
+
+.rooms .room {
+	position: relative;
+	overflow: auto;
+	float: left;
+	background: #FFF;
+	color: #212121;
+	text-align: center;
+	border-radius: .1rem;
+	width: 10.714285714%;
+	height: auto;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	margin-right: 1.785714286%;
+	margin-bottom: .5rem;
+}
+
+.rooms .room:after,
+.card .room-images:before {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+
+	content:'delete';
+	display: none;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	margin-top: 7px;
+	color: #007bff;
+	background: #FFF;
+	z-index: 2;
+
+}
+
+.card .room-images:before {
+	background: transparent;
+	width: 24px;
+	margin-top: 91px;
+	color: #212121;
+}
+
+.rooms .room:hover:after,
+.card .room-images:hover:before,
+.card .room-images:hover:after {
+	display: block;
+}
+
+.card .room-images:after {
+	content:'';
+	display: none;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	color: #007bff;
+	background: rgba(255, 255, 255, .6);
+	z-index: 1;
+}
+
+.rooms .add a {
+	position: absolute;
+	line-height: 0;
+	left: 50%;
+	margin-top: -1px;
+	margin-left: -12px;
+	color: #FFF !important;
+}
+
+.card .room-add-image {
+	position: relative;
+	overflow: hidden;
+	height: 200px;
+}
+
+.card .room-add-image i {
+	position: absolute;
+	font-size: 44px;
+	top: 70px;
+	left: 84px;
+	margin: 0;
+	padding: 0;
+}
+
+.card .room-add-image input.upload-image {
+	position: absolute;
+	top: 70px;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.card .room-add-image input.upload-submit {
+	display: none;
+}
+
+.rooms .add:after {
+	display: none !important;
+}
+
+.rooms .add {
+	background-color: #64B5F6 !important;
+}
+
+.rooms .right,
+.rooms .right-2 {
+	color: #aaa;
+	position: absolute;
+	top: 8px;
+}
+
+.rooms .right:hover,
+.rooms .right-2:hover {
+	color: #64B5F6;
+}
+
+.rooms .right {
+	right: 10px;
+}
+
+.rooms .right-2 {
+	right: 40px;
+}
+
+.card .room-images img {
+	margin-bottom: 1rem;
+	height: 200px;
+	object-fit: cover;
+	width: 100%;
+}

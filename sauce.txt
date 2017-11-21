@@ -1,0 +1,41 @@
+Superior Suite
+
+Spacious and bright Superior Suites offer contemporary styling with a hint of The Peninsula's Art Deco origins. The sleek lines, high ceilings and large windows all work to provide the ultimate in luxury in an urban environment. The elegant living area is tastefully furnished with large sumptuous sofas, a dining table and all the latest highly personalised technology to make staying in these apartment-sized suites the epitome of refined living. The master bedroom is equipped with the latest flat-screen HD TV and the superlative Peninsula entertainment systems. A magnificent marble bathroom, bathed in natural light, large walk-in closets and a host of Peninsula Oscar de la Renta amenities completes the experience of residential decadence.
+
+6980
+
+
+Room Size 121 sq m / 1,344 sq ft 
+Beds King or Twin
+Occupancy Up to 3 adults
+Location 2/F - 6/F (Original Building)
+View Forecourt 
+
+Deluxe Suite
+
+Deluxe Suites have commanding views of the Cultural Centre through the expansive windows. The generous living area is tastefully appointed with richly upholstered armchairs and sofas and a dedicated dining area that can comfortably host up to six guests for dinner or drinks or double as a convenient meeting venue. A separate bedroom features the finest creature comforts, including vanity area, large walk-in closet and the latest audio-visual technology. High-speed complimentary wireless broadband internet access and a well-appointed executive desk with complimentary VOIP international phone calls complete a supremely comfortable Deluxe Suite stay.
+
+8280
+
+
+Room Size 121 sq m / 1,344 sq ft 
+Beds King or Twin
+Occupancy Up to 3 adults
+Location 2/F - 6/F (Original Building)
+View Forecourt 
+
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE room;
+TRUNCATE room_image;
+TRUNCATE room_type;
+SET FOREIGN_KEY_CHECKS = 1;
+
+
+TODO FOR ADMIN:
+1. Check terms for input fields.
+2. View more for Room type.
+3. Edit room type.
+
+TODO FOR MAIN SITE:
+1. Login
+*. Undecided

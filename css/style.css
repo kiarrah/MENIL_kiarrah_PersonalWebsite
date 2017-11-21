@@ -1,0 +1,492 @@
+.banner {
+	position: relative;
+	overflow: hidden;
+	height: 50rem;
+	width: 100%;
+}
+
+.banner img {
+	height: 50rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.middle {
+  transition: .3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav {
+	font-family: 'Spectral SC';
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 64px;
+	width: 100%;
+	z-index: 99;
+	color: #FFF;
+	background: rgba(0, 0, 0, .40);
+}
+
+nav .logo {
+	position: absolute;
+	height: 54px;
+	top: 5px;
+	left: 10px;
+}
+
+nav ul {
+	margin-left: 15rem;
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 2rem;
+	line-height: 64px;
+}
+
+nav li a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+nav.scroll {
+	background: #212121;
+}
+
+footer {
+	background: #000;
+	width: 100%;
+	padding-top: 2rem;
+	color: #FFF !important;
+}
+
+footer [class^="socicon-"],
+footer [class*=" socicon-"] {
+	display: inline-block;
+	color: #FFF;
+	font-size: 21px;
+	padding: 7px 10px 7px 10px;
+	margin-right: 3px;
+}
+
+footer .socicon-facebook {
+	background: #3e5b98;
+}
+
+footer .socicon-twitter {
+	background: #4da7de;
+}
+
+footer .socicon-googleplus {
+	background: #4da7de;
+}
+
+footer .socicon-googleplus {
+	background: rgb(221, 75, 57);
+}
+
+footer .socicon-youtube {
+	background: rgb(224, 42, 32);
+}
+
+footer .copyright,
+footer .login {
+	display: inline-block;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-size: 12px;
+}
+
+footer .login {
+	float: right;
+	text-align: right;
+	color: #FFF;
+	font-weight: bold;
+	margin-left: 1rem;
+}
+
+footer p {
+	color: rgba(255,255,255,0.6);
+}
+
+footer .material-icons {
+	font-size: 15px;
+}
+
+footer .tripadvisor {
+	display: block;
+	width: 100%;
+	background: rgb(75, 126, 55);
+	color: #FFF;
+}
+
+footer .tripadvisor > div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+footer .tripadvisor > div {
+	line-height: 1;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+.snippet-about {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.snippet-about .head h4 {
+	margin-bottom: 0rem;
+}
+
+.snippet-about .body {
+	font-size: 20px;
+}
+
+.snippet-about .separator {
+	height: 3px;
+	width: 20rem;
+	background: #212121;
+	margin: 0 auto 2rem auto;
+}
+
+.side-nav {
+	margin-top: 2rem;
+
+}
+
+.accommodation {
+	position: relative;
+	margin-top: 2rem;
+}
+
+.accommodation:before {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	left: -3rem;
+	top: 0;
+	background-color: #E1E1E1;
+}
+
+.accommodation .title h5 {
+	color: #766b58;
+	margin-bottom: 0px;
+	line-height: .5;
+	font-style: italic;
+}
+
+.accommodation .title hr {
+	margin-top: 0px;
+}
+
+.accommodation .room-type-description {
+	margin-top: 2rem;
+	padding: 2rem;
+	text-align: justify;
+	font-size: 13px;
+}
+
+.accommodation .reservation {
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid #766b58;
+	border-radius: 2px;
+	margin-top: 5rem;
+}
+
+.accommodation .reservation .title {
+	color: #766b58;
+	text-align: center;
+}
+
+.accommodation .reservation h6 {
+	text-align: center;
+}
+
+.accommodation .reservation a {
+	display: block;
+	text-align: center;
+}
+
+.accommodation .reservation span {
+	display: block;
+	font-size: .9em;
+	color: #999;
+	text-align: center;
+	margin-bottom: 3px;
+}
+
+.image-box {
+	position: relative;
+	color: #FFF;
+	margin-bottom: 1rem;
+}
+
+.image-box:before {
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: rgba(0, 0, 0, .70);
+	opacity: 0;
+	transition: .3s ease;
+}
+
+.image-box:hover:before {
+	opacity: 1;
+}
+
+.image-box .middle {
+	opacity: 0;
+	width: 90%;
+	text-align: center;
+}
+
+.image-box:hover .middle {
+  opacity: 1;
+}
+
+.image-box img {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	backface-visibility: hidden;
+}
+
+.image-box .title {
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+}
+
+.image-box .description {
+	display: block;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	overflow: hidden;
+	max-height: 5.4em;
+	line-height: 1.8em;
+}
+
+.image-box .link {
+	display: inline-block;
+	color: #FFF;
+	width: auto;
+	margin-top: 1rem;
+	padding: .5rem 2rem .5rem 2rem;
+	border: 2px solid #FFF;
+}
+
+.image-box .link:hover {
+	background: #FFF;
+	color: #212121;
+}
+
+.carousel img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.reservation {
+	margin-top: 1rem;
+}
+
+.reservation .form-heading {
+	text-align: center;
+}
+
+.reservation .form-heading h4 {
+	margin-bottom: 0px;
+}
+
+.reservation #rooms {
+	margin: 1rem 0 1rem 0;
+}
+
+.reservation #rooms .elem {
+	display: inline-block;
+	padding: 1rem 2rem 1rem 2rem;
+	background-color: #fff;
+	border: 1px solid #F44336;
+	margin-right: .3rem;
+}
+
+.reservation #rooms .elem.available {
+	border-color: #D1D1D1;
+}
+
+.reservation #rooms .elem.selected {
+	background-color: #81C784;
+	border-color: #81C784;
+}
+
+.reservation .section {
+	position: relative;
+	border: 1px solid #D1D1D1;
+	border-radius: 3px;
+	padding: 2rem;
+	margin-bottom: 5rem;
+}
+
+.reservation .section-title {
+	position: absolute;
+	top: -1.7rem;
+	padding: 0 .5rem 0 .5rem;
+	background: #FFF;
+}
+
+.reservation #input-rooms {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+#summary {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 2rem;
+	background-color: #f6f6f6 !important;
+	font-size: .900em;
+}
+
+#summary .header h5 {
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+
+#summary hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+#summary .body .section {
+	margin-top: 2rem;
+	text-decoration: underline;
+}
+
+#summary .section-compute {
+	margin-top: 2rem;
+}
+
+#summary .tax-msg {
+	font-size: .850em;
+	color: #999;
+}
+
+.success-card {
+	position: relative;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border: 1px solid transparent;
+	background: #f6f6f6 !important;
+}
+
+.success-card .header {
+	position: relative;
+	min-height: 200px;
+	background-color: #8BC34A;
+	border-radius: 5px 5px 0 0;
+}
+
+.success-card .header .check {
+	color: #FFF;
+	font-size: 4em;
+	padding: 1rem;
+	border-radius: 50%;
+	border: 5px solid #FFF;
+}
+
+.success-card .header .msg {
+	color: #FFF;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 5px;
+	font-size: .9em;
+}
+
+.success-card .body {
+	padding: 7rem 0 7rem 0;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+}
+
+.success-card .body a {
+	display: block;
+	max-width: 150px;
+	text-align: center;
+	margin: 1rem auto 0 auto;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
